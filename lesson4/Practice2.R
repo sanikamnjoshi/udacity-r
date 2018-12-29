@@ -16,11 +16,11 @@ pokemon$Generation = factor(pokemon$Generation)
 ggplot(pokemon, aes(x = Generation))+
   geom_bar(color = "white", aes(fill = Generation))+
   scale_x_discrete(breaks = seq(1,6,1))
-ggsave("gencount.jpg")
+# ggsave("gencount.jpg")
 
 
 # boxplots of speed by generation
 ggplot(pokemon, aes(x = Generation, y = Speed))+
   geom_boxplot(aes(fill = Generation))+
   coord_cartesian(ylim = c(25, 120))
-ggsave("genspeedbp.jpg")
+# ggsave("genspeedbp.jpg")
